@@ -1,19 +1,148 @@
 body {
-    background-color: white;
+    background-color:rgb(245, 235, 235);
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-img {
-    max-width: 100%;
+.container1{
+    width: 1050px;
+    height: 650px;
+    margin: 3% auto;
+    background: url(Frankenstein.jpeg);
+    padding: 3rem;
+    border: 1px solid rgba(246, 242, 242, 0.1);
+    float: left;
+    box-shadow: 0 10px 30px rgb(255, 253, 253);
+}
+.flip-container {
+  perspective: 1000px;
+  width: 250px;
+  height: 500px;
+  float: right;
+  margin: 5% 0;
+  border-radius: 20px;
 }
 
+.flipper {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.flipped{
+    transform: rotateY(180deg)
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 250px / 500px;
+  border: 1px solid rgb(251, 214, 1);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(10, 10, 10, 0.5);
+}
+
+.front img, .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.front p, .back p {
+    color: rgb(251, 214, 1);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+ .table-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 0px;
+    padding: 3rem;
+    border: 1px solid rgba(246, 242, 242, 0.1);
+    float: left;
+    border: 1px solid rgba(246, 242, 242, 0.1)
+}
+
+.table-container h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(12, 12, 12);
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+table {
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  float: center;
+  border: 1px solid rgba(246, 242, 242, 0.1)
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid rgba(246, 242, 242, 0.1)
+}
+
+tr:nth-child(even) {
+  background-color: #fffbfba3;
+}
+
+.container2{
+    width: 1000px;
+    height: 600px;
+    margin: 10% auto;
+    background: url(paper.jpg);
+    border-radius: 0px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgb(255, 255, 255);
+    border: 1px solid rgba(246, 242, 242, 0.1);
+    float: right;
+}
+.box{
+    width: 800px;
+    height: 500px;
+    margin: 4% 4% 4% 4%;
+    background:url(paper.jpg);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(10, 10, 10, 0.5);
+    border: 1px solid rgba(246, 242, 242, 0.1);
+    float: center;
+}
+.intro{
+    color: rgb(7, 7, 7);
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    float: right;
+}
 p {
     text-indent: 10px;
 }
 
+a{
+  color: rgb(203, 180, 7);
+  font-family: 'Times New Roman', Times, serif;
+  font-size:larger;
+}
+
+i{ color: rgb(203, 180, 7);
+  font-family: 'Times New Roman', Times, serif;
+  font-size:larger;
+}
+<!-- Home page style end --->
 .row {
     width: 100%;
     margin-left: 0;
@@ -32,4 +161,16 @@ p {
     display: none !important;
 }
 
+.supraAdd {
+    vertical-align:super;
+    font-size: smaller;
+}
 
+.doubleunderline{
+  border-bottom: 3px double;
+}
+
+
+.list{
+  text-indent:30px;
+}

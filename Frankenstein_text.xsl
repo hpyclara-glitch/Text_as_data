@@ -56,15 +56,8 @@
         </span>
     </xsl:template>
     
-    
-    <xsl:template match="tei:del">
-        <del>
-            <xsl:attribute name="class">
-                <xsl:value-of select="@hand"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </del>
-    </xsl:template>
+
+ 
     
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
     <xsl:template match="tei:add[@place = 'supralinear']">
@@ -72,9 +65,69 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    <xsl:template match="tei:del[@place = 'supralinear']">
+        <del>
+            <span class="supraAdd">
+                <xsl:apply-templates/>
+            </span>
+        </del>
+    </xsl:template>
     
-    
-    <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+    <xsl:template match="tei:del">
+        <del>
+            <xsl:attribute name="class">
+                <xsl:value-of select="@hand"/>
+            </xsl:attribute>
+            <xsl:attribute name="style">
+                <xsl:text>color: grey;</xsl:text>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
 
-    
+    <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend = 'sup']">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend = 'underline']">
+        <u>
+            <xsl:apply-templates/>
+        </u>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend = 'doubleunderline']">
+        <span class = "doubleunderline">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:hi[@rend = 'circled']">
+        <span>
+            <xsl:attribute name="style">
+                <xsl:text>border: 1px solid black; border-radius: 50%; padding: 2px 6px; display: inline-block;</xsl:text>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <!-- extra-->
+    <xsl:template match="tei:list">
+        <span class="list">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:item[@rend ="right"]">
+        <span class="itemright">
+            <xsl:apply-templates/>
+        </span>
+        <br/>
+    </xsl:template>
 </xsl:stylesheet>
