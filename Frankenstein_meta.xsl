@@ -5,7 +5,7 @@
     exclude-result-prefixes="xs tei"
     version="2.0">
     
-    <!-- <xsl:output method="xml" omit-xml-declaration="yes" indent="yes" /> -->
+<!--<xsl:output method="xml" omit-xml-declaration="yes" indent="yes"/>-->
 
     
     <xsl:template match="tei:TEI">
@@ -20,15 +20,23 @@
                                 <li>Total number of modifications: 
                                     <xsl:value-of select="count(//tei:del|//tei:add)" /> <!-- Counts all the add and del elements, and puts it in a list item -->
                                 </li>
-                                <li>Number of additions: 
+                                  <li>Number of additions: 
                                     <!-- count the additions only -->
+                                   <xsl:value-of select="count(//tei:add)"/>
+                                </li>
+                                <li>Number of deletions: 
+                                   <xsl:value-of select="count(//tei:del)"/>
                                 </li>
                                 <!-- add other list items in which you count things, such as the modifications made by Percy -->
+                                <li>Number of corrections made by Percy Shelly: 
+                                   <xsl:value-of select="count(//tei:del[@hand='#PBS']|//tei:add[@hand='#PBS'])"/>
+                                </li>
+                                <li>Number of corrections made by Mary Shelly: 
+                                   <xsl:value-of select="count(//tei:del[@hand='#MWS']|//tei:add[@hand='#MWS'])"/>
+                                </li>
                             </ul>
                         </div>
                      </div>
         <hr/>
     </xsl:template>
-    
-
 </xsl:stylesheet>

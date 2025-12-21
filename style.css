@@ -7,14 +7,14 @@ body {
 }
 
 .container1{
-    width: 1050px;
-    height: 650px;
-    margin: 3% auto;
-    background: url(Frankenstein.jpeg);
-    padding: 3rem;
-    border: 1px solid rgba(246, 242, 242, 0.1);
-    float: left;
-    box-shadow: 0 10px 30px rgb(255, 253, 253);
+  width: 1050px;
+  height: 650px;
+  margin: 3% auto;
+  background: url("images/Frankenstein.jpeg");
+  padding: 3rem;
+  border: 1px solid rgba(246, 242, 242, 0.1);
+  float: left;
+  box-shadow: 0 10px 30px rgb(255, 253, 253);
 }
 .flip-container {
   perspective: 1000px;
@@ -33,7 +33,7 @@ body {
   height: 100%;
 }
 .flipped{
-    transform: rotateY(180deg)
+  transform: rotateY(180deg)
 }
 
 .front, .back {
@@ -54,17 +54,17 @@ body {
 }
 
 .front p, .back p {
-    color: rgb(251, 214, 1);
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin: 0;
+  color: rgb(251, 214, 1);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .back {
   transform: rotateY(180deg);
 }
 
- .table-container {
+.table-container {
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -76,10 +76,10 @@ body {
 }
 
 .table-container h5{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(12, 12, 12);
-    margin-bottom: 1rem;
-    font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(12, 12, 12);
+  margin-bottom: 1rem;
+  font-size: large;
 }
 
 table {
@@ -104,7 +104,7 @@ tr:nth-child(even) {
     width: 1000px;
     height: 600px;
     margin: 10% auto;
-    background: url(paper.jpg);
+    background: url("images/paper.jpg");
     border-radius: 0px;
     padding: 3rem;
     box-shadow: 0 10px 30px rgb(255, 255, 255);
@@ -115,7 +115,7 @@ tr:nth-child(even) {
     width: 800px;
     height: 500px;
     margin: 4% 4% 4% 4%;
-    background:url(paper.jpg);
+    background:url("images/paper.jpg");
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 0 20px 60px rgba(10, 10, 10, 0.5);
@@ -142,7 +142,7 @@ i{ color: rgb(203, 180, 7);
   font-family: 'Times New Roman', Times, serif;
   font-size:larger;
 }
-<!-- Home page style end --->
+<!-- Change Pagetext --->
 .row {
     width: 100%;
     margin-left: 0;
@@ -154,23 +154,116 @@ i{ color: rgb(203, 180, 7);
 }
 
 .marginAdd {
-    display: none;
+  display: none;
 }
 
 .mirador-canvas-nav {
-    display: none !important;
+  display: none !important;
 }
 
 .supraAdd {
-    vertical-align:super;
-    font-size: smaller;
+  vertical-align:super;
+  font-size: small;
+}
+.overwAdd{
+  font-style: italic;
+  font-size:larger;
+}
+.overwDel{
+  font-size:small;
 }
 
 .doubleunderline{
   border-bottom: 3px double;
 }
 
+.hidden{
+  display: none;
+  font-size: x-small;
+}
+.poem{
+  padding: 3rem;
+}
+.mws{
+  color:#333
+}
 
-.list{
-  text-indent:30px;
+.pbs{
+ color:black
+}
+
+<!--change page header --->
+.header-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.navigation {
+  width: 500px;
+  height: 50px;
+  display:flex;
+  align-items: center;
+  gap: 20px;
+  float:center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.navigation button:hover {
+  background-color: #b39c09;
+}
+
+.navigation p{
+  background-color: rgb(245, 235, 235);
+  color:  rgb(245, 235, 235);
+  display: inline;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navigation button:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+
+#folio {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.modes {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  float:right;
+}
+
+.modes button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+#modes button:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
 }

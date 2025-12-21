@@ -55,48 +55,49 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    
 
- 
-    
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
-    <xsl:template match="tei:add[@place = 'supralinear']">
-        <span class="supraAdd">
+    <xsl:template match="tei:add[@place = 'supralinear' and @hand = '#PBS']">
+        <span class="supraAdd pbs">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="tei:del[@place = 'supralinear']">
-        <del>
-            <span class="supraAdd">
-                <xsl:apply-templates/>
-            </span>
-        </del>
+
+    <xsl:template match="tei:add[@place = 'supralinear' and @hand = '#MWS']">
+        <span class="supraAdd mws">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
-    
-    <xsl:template match="tei:del">
-        <del>
-            <xsl:attribute name="class">
-                <xsl:value-of select="@hand"/>
-            </xsl:attribute>
-            <xsl:attribute name="style">
-                <xsl:text>color: grey;</xsl:text>
-            </xsl:attribute>
+
+    <xsl:template match="tei:del[@type = 'crossedOut' and @hand = '#MWS']">
+        <del class="mws">
             <xsl:apply-templates/>
         </del>
     </xsl:template>
 
+    <xsl:template match="tei:add[@type = 'crossedOut' and @hand = '#PBS']">
+        <span class="pbs" >
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:del[@type = 'crossedOut' and @hand = '#PBS']">
+        <del class="pbs" >
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
+ 
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
-
     <xsl:template match="tei:hi[@rend = 'sup']">
         <sup>
             <xsl:apply-templates/>
         </sup>
     </xsl:template>
 
-    <xsl:template match="tei:hi[@rend = 'underline']">
+    <xsl:template match="tei:hi[@rend = 'u']">
         <u>
             <xsl:apply-templates/>
         </u>
@@ -118,16 +119,67 @@
     </xsl:template>
 
     <!-- extra-->
-    <xsl:template match="tei:list">
-        <span class="list">
+    <xsl:template match="tei:poem">
+        <span class="poem">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
-    <xsl:template match="tei:item[@rend ="right"]">
+    <xsl:template match="tei:item[@rend = 'right']">
         <span class="itemright">
             <xsl:apply-templates/>
         </span>
         <br/>
+    </xsl:template>
+
+    <xsl:template match="tei:note[@type = 'hide']">
+        <span class="hidden">
+            <br/>
+            <xsl:apply-templates/>
+            <br/>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:add[@place = 'intralinear' and @hand ='#MWS']">
+        <span class="mws">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="tei:del[@place ='intralinear' and @hand = '#MWS']">
+        <del class = "mws">
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
+
+    <xsl:template match="tei:add[@place = 'intralinear' and @hand = '#PBS']">
+        <span class="pbs">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:del[@place = 'intralinear' and @hand = '#PBS']">
+        <del class="pbs">
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
+
+    <xsl:template match="tei:del[@type='overwritten' and @hand ='#PBS']">
+        <del class="overwDel pbs" >
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
+    <xsl:template match="tei:del[@type='overwritten' and @hand ='#MWS']">
+        <del class="overwDel mws" >
+            <xsl:apply-templates/>
+        </del>
+    </xsl:template>
+    <xsl:template match="tei:add[@place='overwritten' and @hand = '#PBS']">
+        <span class="overwAdd pbs">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="tei:add[@place='overwritten' and @hand = '#MWS']">
+        <span class="overwAdd mws">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 </xsl:stylesheet>

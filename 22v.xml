@@ -47,7 +47,7 @@
           ha<metamark>&#8257;</metamark> <add place="supralinear" hand="#MWS" rend="blackink">r</add>dly that I felt the palpitation of<lb/>
           every artery: at others I nearly sunk<lb/>
           to the ground <del type="crossedOut" hand ="#MWS" rend="blackink">with</del>
-          <add place="above" hand= "#PBS" rend="blackink">thro</add> languor and ex-<lb/>
+          <add place="supralinear" hand= "#PBS" rend="blackink">thro</add> languor and ex-<lb/>
           treme weakness.<del type="crossedOut" hand="#MWS" rend="blackink">Surely so wretched a</del><lb/>
           <add place="marginleft" hand="#MWS" rend="blackink">X<lb/>
             and mingled<lb/>
@@ -67,10 +67,10 @@
           so complete.
         </p>
         <p>
-          Morning — dismal and wet — at leng <del type="overwritten" rend="blackink">ht</del>th<lb/>
+          Morning — dismal and wet — at leng <del type="overwritten" hand= "#MWS" rend="blackink">ht</del><add place = "overwritten" hand= "#MWS" rend="blackink">th<lb/>
           dawned, and <del type="crossedOut">to</del> discovered to my sleepless<lb/>
           and aching eyes the <unclear reason="ink blot">church</unclear> of Ingols-<lb/>
-          stadt its white steeple &amp; <del place="supralinear" type="crossedOut" hand="#MWS" rend="blackink">the</del> <add place="supralinear" hand="#MWS" rend="blackink">its</add> clock which<lb/>
+          stadt its white steeple &amp; <del type="crossedOut" hand="#MWS"  place = "supralinear" rend="blackink">the</del> <add place="supralinear" hand="#MWS" rend="blackink">its</add> clock which<lb/>
           pointed to the sixth<del type="crossedOut" hand= "#MBS" rend="blackink">e</del> hour. The porter<lb/>
           opened the gates of the court which had<lb/>
           that night been my assylum and I<lb/>
