@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
     <title>Frankenstein Edition</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,16 +47,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 
     <div class = "container1">
       <div class = "box">
         <div class = "intro">
-          <p> Picture this: a stormy summer night in 1816 at Villa Diodati by Lake Geneva.Lightning cracks across the sky as Lord Byron throws down a challenge to his houseguests. Among them sits an eighteen-year-old Mary Wollstonecraft Godwin, 
+          <p> 
+            Picture this: a stormy summer night in 1816 at Villa Diodati by Lake Geneva.Lightning cracks across the sky as Lord Byron throws down a challenge to his houseguests. Among them sits an eighteen-year-old Mary Wollstonecraft Godwin, 
             who will soon pen a tale that reverberates through centuries. What emerged from that tempestuous evening wasn't just another gothic horror.
-            It was <i>Frankenstein</i>, a revolutionary meditation on ambition, responsibility, and the terrifying consequences of playing god.</p>
-          <p> Welcome to this mini digital edition recreated by <i>Peiying Huang and the teaching team from the Text as Data</i>. Drawing from the treasure trove of the <a herf="https://shelleygodwinarchive.org/">Shelley Godwin Archive</a> and <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a>, 
-            we've created an intimate gateway into the creation of this work of art. Here, you can trace the ink-stained evolution of a story that defined an entire genre, sparked countless adaptations, and continues to haunt our collective imagination. This digital edition brings the creation process live.</p>
+            It was <i>Frankenstein</i>, a revolutionary meditation on ambition, responsibility, and the terrifying consequences of playing god.
+          </p>
+          <p> Welcome to this mini digital edition recreated by <i>Peiying Huang and the teaching team from the Text as Data from University of Antwerp</i>. Drawing from the treasure trove of the <a href="https://shelleygodwinarchive.org">Shelley Godwin Archive</a> and <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a>, 
+            we've created an intimate gateway into the creation of this work of art. Here, you can trace the ink-stained evolution of a story that defined an entire genre, sparked countless adaptations, and continues to haunt our collective imagination. This digital edition brings the creation process live.
+          </p>
         </div>
       </div>
     </div>
@@ -64,52 +67,52 @@
     <div class="flip-container" onclick="flipImage()">
         <div class="flipper" id="flipper">
             <div class="front">
-              <img src="images/Mary_Shelley.tif.jpg" alt="Mary Shelley">
-              <p>Mary Shelley </p>
+              <img src="../images/Mary_Shelley.tif.jpg" alt="Mary Shelley">
             </div>
             <div class="back">
-              <img src="images/Percy_Shelley.jpg" alt="Percy Shelley">
-              <p>Percy Shelley </p>
+              <img src="../images/Percy_Shelley.jpg" alt="Percy Shelley">
             </div>
         </div>
+        <button id="name">Mary Shelley</button>
     </div>
 
     <div class = "container2">
-        <div class ="intro">
-            <p>Are you ready to see how the monster is creater? Whether you're a dedicated scholar dissecting every revision, a student encountering the novel creation for the first time,
-            or simply someone fascinated by the teenage prodigy who dared to ask "What makes us human?". This digital edition using <a href = "https://bdmpmanual.uantwerpen.be/"> Encoding Manual</a> is your portal into literary history. 
-            Explore, question, and perhaps discover why Shelley's monster still speaks to us, two hundred years later, about our own deepest fears and highest hopes.</p>
-            <p>The <a href = "https://creativecommons.org/licenses/by-nc/4.0/">Licence</a> is included.</p>
-        </div> 
-        <div class = "table-container">
-          <h5> Pages in Current Digital Edition</h5>
-            <table>
-              <tr>
-                <th>left</th>
-                <th>right</th>
-              </tr>
-              <tr>
-                <td> 21v</td>
-                <td> 21r</td>
-              </tr>
-              <tr>
-                <td> 22v</td>
-                <td> 22r</td>
-              </tr>
-              <tr>
-                <td> 23v</td>
-                <td> 23r</td>
-              </tr>
-              <tr>
-                <td> 24v</td>
-                <td> 24r</td>
-              </tr>
-              <tr>
-                <td> 25v</td>
-                <td> 25r</td>
-              </tr>
-            </table>
-        </div>
+      <div class ="intro">
+        <p>
+          Are you ready to see how the monster is created by its authors, Mary Shelley and Percy Shelley? Whether you're a dedicated scholar dissecting every revision, a student encountering the novel creation for the first time,
+          or simply someone fascinated by the teenage prodigy who dared to ask "What makes us human?". This digital edition using <a href = "https://bdmpmanual.uantwerpen.be/"> Encoding Manual</a> is your portal into literary history. 
+          Explore, question, and perhaps discover why Shelleys' monster still speaks to us, two hundred years later, about our own deepest fears and highest hopes.The <a href = "https://creativecommons.org/licenses/by-nc/4.0/">Licence</a> is included.
+        </p>
+      </div> 
+      <div class = "table-container">
+        <h5> Pages in Current Digital Edition</h5>
+          <table>
+            <tr>
+              <th>left</th>
+              <th>right</th>
+            </tr>
+            <tr>
+              <td> <a href="21v.html">21v</a></td>
+              <td> <a href="21r.html">21r</a></td>
+            </tr>
+            <tr>
+              <td> <a href="22v.html">22v</a></td>
+              <td> <a href="22r.html">22r</a></td>
+            </tr>
+            <tr>
+              <td> <a href="23v.html">23v</a></td>
+              <td> <a href="23r.html">23r</a></td>
+            </tr>
+            <tr>
+              <td><a href="24v.html">24v</a></td>
+              <td><a href="24r.html">24r</a></td>
+            </tr>
+            <tr>
+              <td><a href="25v.html">25v</a></td>
+              <td><a href="25r.html">25r</a></td>
+            </tr>
+          </table>
+      </div>
     </div>
   </body>
 </html>

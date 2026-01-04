@@ -24,6 +24,19 @@ body {
   margin: 5% 0;
   border-radius: 20px;
 }
+.flip-container button{
+  padding: 10px 20px;
+  width: 250px;
+  color: rgb(203, 180, 7);  
+  border: 1px solid rgb(251, 214, 1);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  position: relative;
+  float: inline-start;
+}
 
 .flipper {
   transition: transform 0.8s;
@@ -206,12 +219,6 @@ i{ color: rgb(203, 180, 7);
   align-items: center;
   gap: 20px;
   float:center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: larger;
-}
-
-.navigation button:hover {
-  background-color: #b39c09;
 }
 
 .navigation p{
@@ -228,6 +235,8 @@ i{ color: rgb(203, 180, 7);
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
 }
 
 .navigation button:hover {
@@ -254,8 +263,8 @@ i{ color: rgb(203, 180, 7);
 .modes button {
   padding: 10px 20px;
   background-color: white;
-  color: #333;
-  border: 1px solid #ddd;
+  color: #333;  
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
@@ -263,7 +272,8 @@ i{ color: rgb(203, 180, 7);
   font-size: larger;
 }
 
-#modes button:hover {
+.modes button:hover {
   background-color: #f5f5f5;
   border-color: #999;
 }
+

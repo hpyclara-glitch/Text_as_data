@@ -1,8 +1,7 @@
 // Declare variables for getting the xml file for the XSL transformation (folio_xml) and to load the image in IIIF on the page in question (number).
 let tei = document.getElementById("folio");
 let tei_xml = tei.innerHTML;
-let extension = ".xml";
-let folio_xml = tei_xml.concat(extension);
+let folio_xml = "../xml/" + tei_xml+ ".xml";
 let page = document.getElementById("page");
 let pageN = page.innerHTML;
 let number = Number(pageN);
@@ -47,7 +46,7 @@ var mirador = Mirador.viewer({
 function documentLoader() {
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_text.xsl").then(response => response.text())
+      fetch("../Frankenstein_text.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
@@ -71,7 +70,7 @@ function documentLoader() {
 function statsLoader() {
   Promise.all([
     fetch(folio_xml).then(response => response.text()),
-    fetch("Frankenstein_meta.xsl").then(response => response.text())
+    fetch("../Frankenstein_meta.xsl").then(response => response.text())
   ])
   .then(function ([xmlString, xslString]) {
     var parser = new DOMParser();
@@ -192,9 +191,16 @@ function reading(){
   });
 }
 
+
 function flipImage() {
-  var flipper = document.getElementById("flipper");
-  flipper.classList.toggle("flipped");
+    const flipper = document.getElementById('flipper');
+    const button = document.getElementById('name');
+    flipper.classList.toggle('flipped');
+    if (flipper.classList.contains('flipped')) {
+        button.textContent = 'Percy Shelley';
+    } else {
+        button.textContent = 'Mary Shelley';
+    }
 }
 
 function goToPage(url) {
