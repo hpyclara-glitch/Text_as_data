@@ -44,7 +44,7 @@
         the grave worms crawling in the folds of<lb/>
         the flannel; I started
         <add place="infralinear" hand="#MWS" rend="blackink"><metamark></metamark></add>
-        <metamark>&#8257;</metamark>
+        <add>^</add>
         <note type="hide">'^' is used as metamark, close visual resemblance</note>
         <add place="supralinear" hand="#MWS" rend="blackink">from my sleep</add>
         with horror, a<lb/>
@@ -95,7 +95,7 @@
         Oh! no mortal could support <lb/>
         the horror of that countenance.a<lb/>
         mummy 
-        <metamark>&#8257;</metamark>
+        <add>^</add>
         <add place="margintop" hand="#MWS" rend="blackink">again</add>
         endued with 
         <del type="crossedOut" hand="#MWS" rend="blackink">life</del>

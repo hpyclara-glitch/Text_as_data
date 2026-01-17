@@ -36,7 +36,7 @@
             <metamark function="pagenumber"><num><hi rend="circled">79</hi></num></metamark>
             <p>
                my view. I did not dare <del type="crossedOut" hand="#MWS" rend="blackink">to</del> return<lb/>
-               to the appartment <add place="supralinear" hand="#MWS" rend="blackink">which</add> <metamark>&#8257;</metamark> I inhabited but<lb/>
+               to the appartment <add place="supralinear" hand="#MWS" rend="blackink">which</add> <add>^</add> I inhabited but<lb/>
                felt impelled to hurry on although<lb/>
                wetted by the <del type="crossedOut" hand="#MWS" rend="blackink">drizzling</del> rain which poured<lb/>
                from a black and comfortless sky.<lb/>
@@ -48,18 +48,20 @@
                upon my mind. I traversed the streets<lb/>
                without any clear conception of where<lb/>
                I was or what I was doing: my heart<lb/>
-               palpitated <del type="crossedOut" hand="#MWS" rend="blackink">with</del><metamark>&#8257;</metamark><add place="supralinear" hand="#PBS" rend="blackink">in the sickness of</add> fear and I hurried<lb/>
+               palpitated <del type="crossedOut" hand="#MWS" rend="blackink">with</del><add>^</add><add place="supralinear" hand="#PBS" rend="blackink">in the sickness of</add> fear and I hurried<lb/>
                on with irregular steps not daring<lb/>
                to look about me,<lb/>
             </p>
-            <poem>"Like one who on a lon<del type="crossedOut" hand="#MWS" rend="blackink">s</del>esome road<lb/> </poem>
-            <poem> "and having once turned round<lb/></poem>
-            <poem><add place="supralinear" hand="#MWS" rend="blackink">walks on</add><lb/></poem>
-            <poem><del type="crossedOut" hand="#MWS" rend="blackink">wal</del> And turns no more his head<lb/></poem>
-            <poem>Because he knows a frightful<lb/></poem>
-            <poem><add place="supralinear" hand="#MWS" rend="blackink">fiend</add><lb/></poem>
-            <poem>"doth close behind hum tread."*<lb/></poem>
-            <poem><add place="marginleft" hand="#MWS" rend="blackink">*Coleridge's<lb/>"Ancient Mariner.'</add><lb/></poem>
+            <p>
+               <poem>"Like one who on a lon<del type="crossedOut" hand="#MWS" rend="blackink">s</del>esome road<lb/> </poem>
+               <poem> "and having once turned round<lb/></poem>
+               <poem><add place="supralinear" hand="#MWS" rend="blackink">walks on</add><lb/></poem>
+               <poem><del type="crossedOut" hand="#MWS" rend="blackink">wal</del> And turns no more his head<lb/></poem>
+               <poem>Because he knows a frightful<lb/></poem>
+               <poem><add place="supralinear" hand="#MWS" rend="blackink">fiend</add><lb/></poem>
+               <poem>"doth close behind hum tread."*<lb/></poem>
+               <poem><add place="marginleft" hand="#MWS" rend="blackink">*Coleridge's<lb/>"Ancient Mariner.'</add><lb/></poem>
+            </p>
             <p>
                Continueing thus, I came at lenght<lb/>
                <del type="crossedOut" hand="#MWS" rend="blackink">opposite</del><add place="supralinear" hand="#PBS" rend="blackink">opposite to</add> the Inn at which the dili<lb/>
@@ -68,7 +70,7 @@
                some minutes with my eyes fixed on<lb/>
                a coach that was coming towards me<lb/>
                from the other end of the street.<lb/>
-               As <del type="crossedOut" hand="#MWS" rend="blackink">I</del><metamark>&#8257;</metamark><add place="supralinear" hand="#MWS" rend="blackink">it</add> drew nearer I observed that it<lb/>
+               As <del type="crossedOut" hand="#MWS" rend="blackink">I </del><add>^ </add><add place="supralinear" hand="#MWS" rend="blackink">it</add> drew nearer I observed that it<lb/>
                was the Swiss diligence; it stopped<lb/>
                just where I was standing, and on<lb/>
             </p>
